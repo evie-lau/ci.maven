@@ -152,7 +152,6 @@ public class BaseDevTest {
          else {
             process.destroy(); // stop run
          }
-         writer.flush();
          writer.close();
 
          // test that dev mode has stopped running
