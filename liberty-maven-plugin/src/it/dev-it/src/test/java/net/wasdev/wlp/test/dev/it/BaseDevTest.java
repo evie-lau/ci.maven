@@ -21,6 +21,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.Writer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -130,7 +131,7 @@ public class BaseDevTest {
    }
 
    protected static void cleanUpAfterClass() throws Exception {
-      cleanUpAfterClass(true);
+      cleanUpAfterClass(false);
    }
 
    protected static void cleanUpAfterClass(boolean isDevMode) throws Exception {
